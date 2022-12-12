@@ -1,4 +1,4 @@
-{
+`{
   "success": true,
   "error": null,
   "results": {
@@ -11,9 +11,8 @@
             "source_mapping": {
               "start": 1171,
               "length": 248,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -34,9 +33,8 @@
                 "source_mapping": {
                   "start": 989,
                   "length": 808,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -75,9 +73,8 @@
             "source_mapping": {
               "start": 1323,
               "length": 63,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -93,9 +90,8 @@
                 "source_mapping": {
                   "start": 1171,
                   "length": 248,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -116,9 +112,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -158,7 +153,7 @@
         "markdown": "[trustNoOne.withdrawReward(address)](contracts/temporary.sol#L37-L42) sends eth to arbitrary user\n\tDangerous calls:\n\t- [(success) = recipient.call{value: amountToWithdraw}()](contracts/temporary.sol#L40)\n",
         "first_markdown_element": "contracts/temporary.sol#L37-L42",
         "id": "aec8c7b89187fc4d038d1a406b94ecc46209bfcae109dad2ffb96a0cb0c8d30a",
-        "check": "arbitrary-send",
+        "check": "arbitrary-send-eth",
         "impact": "High",
         "confidence": "Medium"
       },
@@ -170,9 +165,8 @@
             "source_mapping": {
               "start": 675,
               "length": 310,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -193,9 +187,8 @@
                 "source_mapping": {
                   "start": 388,
                   "length": 599,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -230,9 +223,8 @@
             "source_mapping": {
               "start": 777,
               "length": 64,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -248,9 +240,8 @@
                 "source_mapping": {
                   "start": 675,
                   "length": 310,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -271,9 +262,8 @@
                     "source_mapping": {
                       "start": 388,
                       "length": 599,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -313,9 +303,8 @@
             "source_mapping": {
               "start": 950,
               "length": 28,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -331,9 +320,8 @@
                 "source_mapping": {
                   "start": 675,
                   "length": 310,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -354,9 +342,8 @@
                     "source_mapping": {
                       "start": 388,
                       "length": 599,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -408,9 +395,8 @@
             "source_mapping": {
               "start": 1425,
               "length": 370,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -432,9 +418,8 @@
                 "source_mapping": {
                   "start": 989,
                   "length": 808,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -473,9 +458,8 @@
             "source_mapping": {
               "start": 1639,
               "length": 25,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -491,9 +475,8 @@
                 "source_mapping": {
                   "start": 1425,
                   "length": 370,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -515,9 +498,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -561,9 +543,8 @@
             "source_mapping": {
               "start": 1323,
               "length": 63,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -579,9 +560,8 @@
                 "source_mapping": {
                   "start": 1171,
                   "length": 248,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -602,9 +582,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -648,9 +627,8 @@
             "source_mapping": {
               "start": 1758,
               "length": 30,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -666,9 +644,8 @@
                 "source_mapping": {
                   "start": 1425,
                   "length": 370,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -690,9 +667,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -748,9 +724,8 @@
             "source_mapping": {
               "start": 149,
               "length": 235,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -771,9 +746,8 @@
                 "source_mapping": {
                   "start": 77,
                   "length": 309,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -800,9 +774,8 @@
             "source_mapping": {
               "start": 234,
               "length": 54,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -818,9 +791,8 @@
                 "source_mapping": {
                   "start": 149,
                   "length": 235,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -841,9 +813,8 @@
                     "source_mapping": {
                       "start": 77,
                       "length": 309,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -875,9 +846,8 @@
             "source_mapping": {
               "start": 349,
               "length": 28,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -893,9 +863,8 @@
                 "source_mapping": {
                   "start": 149,
                   "length": 235,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -916,9 +885,8 @@
                     "source_mapping": {
                       "start": 77,
                       "length": 309,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -962,9 +930,8 @@
             "source_mapping": {
               "start": 1195,
               "length": 17,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -980,9 +947,8 @@
                 "source_mapping": {
                   "start": 1171,
                   "length": 248,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1003,9 +969,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -1046,9 +1011,8 @@
             "source_mapping": {
               "start": 1323,
               "length": 63,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1064,9 +1028,8 @@
                 "source_mapping": {
                   "start": 1171,
                   "length": 248,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1087,9 +1050,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -1134,16 +1096,6 @@
         "confidence": "Medium"
       },
       {
-        "elements": [],
-        "description": "solc-0.8.13 is not recommended for deployment\n",
-        "markdown": "solc-0.8.13 is not recommended for deployment\n",
-        "first_markdown_element": "",
-        "id": "bc56806acae80296337a907273e86b040bfd9b323ee999e7bfc4971d888f5838",
-        "check": "solc-version",
-        "impact": "Informational",
-        "confidence": "High"
-      },
-      {
         "elements": [
           {
             "type": "pragma",
@@ -1151,9 +1103,8 @@
             "source_mapping": {
               "start": 51,
               "length": 24,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1172,10 +1123,20 @@
             }
           }
         ],
-        "description": "Pragma version^0.8.13 (contracts/temporary.sol#2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6/0.8.7\n",
-        "markdown": "Pragma version[^0.8.13](contracts/temporary.sol#L2) necessitates a version too recent to be trusted. Consider deploying with 0.6.12/0.7.6/0.8.7\n",
+        "description": "Pragma version^0.8.13 (contracts/temporary.sol#2) allows old versions\n",
+        "markdown": "Pragma version[^0.8.13](contracts/temporary.sol#L2) allows old versions\n",
         "first_markdown_element": "contracts/temporary.sol#L2",
-        "id": "d262c487fae313a1c389a10f6b40b4c2db662c4bcf63c099b4d1e77739a4adbb",
+        "id": "48d2867f6b7633001797dbaa95ed594ed9b10c8130d7e0f7478f78a3a032c270",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [],
+        "description": "solc-0.8.13 is not recommended for deployment\n",
+        "markdown": "solc-0.8.13 is not recommended for deployment\n",
+        "first_markdown_element": "",
+        "id": "bc56806acae80296337a907273e86b040bfd9b323ee999e7bfc4971d888f5838",
         "check": "solc-version",
         "impact": "Informational",
         "confidence": "High"
@@ -1188,9 +1149,8 @@
             "source_mapping": {
               "start": 149,
               "length": 235,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1211,9 +1171,8 @@
                 "source_mapping": {
                   "start": 77,
                   "length": 309,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1240,9 +1199,8 @@
             "source_mapping": {
               "start": 234,
               "length": 54,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1258,9 +1216,8 @@
                 "source_mapping": {
                   "start": 149,
                   "length": 235,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1281,9 +1238,8 @@
                     "source_mapping": {
                       "start": 77,
                       "length": 309,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -1323,9 +1279,8 @@
             "source_mapping": {
               "start": 1171,
               "length": 248,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1346,9 +1301,8 @@
                 "source_mapping": {
                   "start": 989,
                   "length": 808,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1387,9 +1341,8 @@
             "source_mapping": {
               "start": 1323,
               "length": 63,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1405,9 +1358,8 @@
                 "source_mapping": {
                   "start": 1171,
                   "length": 248,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1428,9 +1380,8 @@
                     "source_mapping": {
                       "start": 989,
                       "length": 808,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -1482,9 +1433,8 @@
             "source_mapping": {
               "start": 675,
               "length": 310,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1505,9 +1455,8 @@
                 "source_mapping": {
                   "start": 388,
                   "length": 599,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1542,9 +1491,8 @@
             "source_mapping": {
               "start": 777,
               "length": 64,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1560,9 +1508,8 @@
                 "source_mapping": {
                   "start": 675,
                   "length": 310,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1583,9 +1530,8 @@
                     "source_mapping": {
                       "start": 388,
                       "length": 599,
-                      "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                       "filename_relative": "contracts/temporary.sol",
-                      "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                      "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                       "filename_short": "contracts/temporary.sol",
                       "is_dependency": false,
                       "lines": [
@@ -1633,9 +1579,8 @@
             "source_mapping": {
               "start": 388,
               "length": 599,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1682,9 +1627,8 @@
             "source_mapping": {
               "start": 989,
               "length": 808,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1735,9 +1679,8 @@
             "source_mapping": {
               "start": 1015,
               "length": 46,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1753,9 +1696,8 @@
                 "source_mapping": {
                   "start": 989,
                   "length": 808,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
                   "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+                  "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
                   "filename_short": "contracts/temporary.sol",
                   "is_dependency": false,
                   "lines": [
@@ -1793,9 +1735,8 @@
             "source_mapping": {
               "start": 989,
               "length": 808,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
               "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
+              "filename_absolute": "/home/ec2-user/slither-api/contracts/temporary.sol",
               "filename_short": "contracts/temporary.sol",
               "is_dependency": false,
               "lines": [
@@ -1832,287 +1773,6 @@
         "id": "aea7528f6a11e844c63e1374002fa65624aa05ce5fefb18d1f73331290b0921d",
         "check": "unused-state",
         "impact": "Informational",
-        "confidence": "High"
-      },
-      {
-        "elements": [
-          {
-            "type": "function",
-            "name": "withdrawBalance",
-            "source_mapping": {
-              "start": 675,
-              "length": 310,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_short": "contracts/temporary.sol",
-              "is_dependency": false,
-              "lines": [
-                24,
-                25,
-                26,
-                27,
-                28,
-                29
-              ],
-              "starting_column": 5,
-              "ending_column": 6
-            },
-            "type_specific_fields": {
-              "parent": {
-                "type": "contract",
-                "name": "crossFunction",
-                "source_mapping": {
-                  "start": 388,
-                  "length": 599,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_short": "contracts/temporary.sol",
-                  "is_dependency": false,
-                  "lines": [
-                    14,
-                    15,
-                    16,
-                    17,
-                    18,
-                    19,
-                    20,
-                    21,
-                    22,
-                    23,
-                    24,
-                    25,
-                    26,
-                    27,
-                    28,
-                    29,
-                    30
-                  ],
-                  "starting_column": 1,
-                  "ending_column": 2
-                }
-              },
-              "signature": "withdrawBalance()"
-            }
-          }
-        ],
-        "description": "withdrawBalance() should be declared external:\n\t- crossFunction.withdrawBalance() (contracts/temporary.sol#24-29)\n",
-        "markdown": "withdrawBalance() should be declared external:\n\t- [crossFunction.withdrawBalance()](contracts/temporary.sol#L24-L29)\n",
-        "first_markdown_element": "contracts/temporary.sol#L24-L29",
-        "id": "34af8173b62b686d94b0422d2f9f93862a797d799c06faedbeec8367be873868",
-        "check": "external-function",
-        "impact": "Optimization",
-        "confidence": "High"
-      },
-      {
-        "elements": [
-          {
-            "type": "function",
-            "name": "mytransfer",
-            "source_mapping": {
-              "start": 470,
-              "length": 199,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_short": "contracts/temporary.sol",
-              "is_dependency": false,
-              "lines": [
-                17,
-                18,
-                19,
-                20,
-                21,
-                22
-              ],
-              "starting_column": 5,
-              "ending_column": 6
-            },
-            "type_specific_fields": {
-              "parent": {
-                "type": "contract",
-                "name": "crossFunction",
-                "source_mapping": {
-                  "start": 388,
-                  "length": 599,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_short": "contracts/temporary.sol",
-                  "is_dependency": false,
-                  "lines": [
-                    14,
-                    15,
-                    16,
-                    17,
-                    18,
-                    19,
-                    20,
-                    21,
-                    22,
-                    23,
-                    24,
-                    25,
-                    26,
-                    27,
-                    28,
-                    29,
-                    30
-                  ],
-                  "starting_column": 1,
-                  "ending_column": 2
-                }
-              },
-              "signature": "mytransfer(address,uint256)"
-            }
-          }
-        ],
-        "description": "mytransfer(address,uint256) should be declared external:\n\t- crossFunction.mytransfer(address,uint256) (contracts/temporary.sol#17-22)\n",
-        "markdown": "mytransfer(address,uint256) should be declared external:\n\t- [crossFunction.mytransfer(address,uint256)](contracts/temporary.sol#L17-L22)\n",
-        "first_markdown_element": "contracts/temporary.sol#L17-L22",
-        "id": "474e84c544adc5d389898c17a8ba58764abfaf6aaf930c901dcbf6c30607681d",
-        "check": "external-function",
-        "impact": "Optimization",
-        "confidence": "High"
-      },
-      {
-        "elements": [
-          {
-            "type": "function",
-            "name": "withdraw",
-            "source_mapping": {
-              "start": 149,
-              "length": 235,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_short": "contracts/temporary.sol",
-              "is_dependency": false,
-              "lines": [
-                6,
-                7,
-                8,
-                9,
-                10,
-                11
-              ],
-              "starting_column": 5,
-              "ending_column": 6
-            },
-            "type_specific_fields": {
-              "parent": {
-                "type": "contract",
-                "name": "Bank",
-                "source_mapping": {
-                  "start": 77,
-                  "length": 309,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_short": "contracts/temporary.sol",
-                  "is_dependency": false,
-                  "lines": [
-                    4,
-                    5,
-                    6,
-                    7,
-                    8,
-                    9,
-                    10,
-                    11,
-                    12
-                  ],
-                  "starting_column": 1,
-                  "ending_column": 2
-                }
-              },
-              "signature": "withdraw()"
-            }
-          }
-        ],
-        "description": "withdraw() should be declared external:\n\t- Bank.withdraw() (contracts/temporary.sol#6-11)\n",
-        "markdown": "withdraw() should be declared external:\n\t- [Bank.withdraw()](contracts/temporary.sol#L6-L11)\n",
-        "first_markdown_element": "contracts/temporary.sol#L6-L11",
-        "id": "a0d5d0efc9eaa0cb51ac1ffa50f2da424d294ae2e6acee94bea29811d8fc3f9a",
-        "check": "external-function",
-        "impact": "Optimization",
-        "confidence": "High"
-      },
-      {
-        "elements": [
-          {
-            "type": "function",
-            "name": "getFirstWithdrawalBonus",
-            "source_mapping": {
-              "start": 1425,
-              "length": 370,
-              "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_relative": "contracts/temporary.sol",
-              "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-              "filename_short": "contracts/temporary.sol",
-              "is_dependency": false,
-              "lines": [
-                44,
-                45,
-                46,
-                47,
-                48,
-                49,
-                50
-              ],
-              "starting_column": 5,
-              "ending_column": 6
-            },
-            "type_specific_fields": {
-              "parent": {
-                "type": "contract",
-                "name": "trustNoOne",
-                "source_mapping": {
-                  "start": 989,
-                  "length": 808,
-                  "filename_used": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_relative": "contracts/temporary.sol",
-                  "filename_absolute": "/home/ec2-user/slither-api/external/contracts/temporary.sol",
-                  "filename_short": "contracts/temporary.sol",
-                  "is_dependency": false,
-                  "lines": [
-                    32,
-                    33,
-                    34,
-                    35,
-                    36,
-                    37,
-                    38,
-                    39,
-                    40,
-                    41,
-                    42,
-                    43,
-                    44,
-                    45,
-                    46,
-                    47,
-                    48,
-                    49,
-                    50,
-                    51,
-                    52
-                  ],
-                  "starting_column": 1,
-                  "ending_column": 0
-                }
-              },
-              "signature": "getFirstWithdrawalBonus(address)"
-            }
-          }
-        ],
-        "description": "getFirstWithdrawalBonus(address) should be declared external:\n\t- trustNoOne.getFirstWithdrawalBonus(address) (contracts/temporary.sol#44-50)\n",
-        "markdown": "getFirstWithdrawalBonus(address) should be declared external:\n\t- [trustNoOne.getFirstWithdrawalBonus(address)](contracts/temporary.sol#L44-L50)\n",
-        "first_markdown_element": "contracts/temporary.sol#L44-L50",
-        "id": "b63070275e88446838441a26151134a55eeb2e29fda0dc930608c40d25ed9a3e",
-        "check": "external-function",
-        "impact": "Optimization",
         "confidence": "High"
       }
     ]

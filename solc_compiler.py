@@ -6,7 +6,8 @@ from packaging import version
 # class for encapsulatin solc compiler related functs
 class SolcCompiler:
     # get all available solc versions to install then on server bootsrap
-    def get_solc_versions(self):
+    def get_solc_versions(self, latest : bool = True):
+        os.system('export ')
         proc = subprocess.Popen(['solc-select', 'install'], stdout=subprocess.PIPE)
 
         versions = []
@@ -15,7 +16,10 @@ class SolcCompiler:
             if not line:
                 break
             version = line.decode('utf-8').rstrip('b').rstrip()
-            versions.append(version)
+            if not latest:
+                versions.append(version)
+            if '0.8' in version and latest:
+                versions.append(version)
 
         # filters versions where it does not start with integer
         filtered_versions = filter(lambda x: x[0].isdigit(), versions)

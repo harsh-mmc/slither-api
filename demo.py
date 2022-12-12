@@ -13,7 +13,7 @@ print(datatest)
 
 testContract = Contract(sol_contract=content, pragma='0.8.13')
 print("Type of testContract object is", type(testContract))
-print(testContract.sol_contract, testContract.pragma)
+#print(testContract.sol_contract, testContract.pragma)
 r = requests.post(url = 'http://127.0.0.1:8000/scanner',  json={'sol_contract' : content, 'pragma' : '0.8.13'})
 #print(r.url)
 print(r, r.json())
@@ -22,3 +22,9 @@ r2 = requests.post(url = 'http://127.0.0.1:8000/items', json={'sol_contract' : c
 #print(r2.url)
 print(r2.json())
 
+final = requests.post(url = 'http://127.0.0.1:8000/vulnerable',  json={'sol_contract' : content, 'pragma' : '0.8.13'})
+print(final)
+print(final.json())
+out = requests.post(url = 'http://127.0.0.1:8000/output', json=final.json())
+print(out, out.url)
+print(out.text)

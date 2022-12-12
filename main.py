@@ -26,7 +26,42 @@ class Issues(BaseModel):
     medium: int
     high: int
 
+class Output(BaseModel) : 
+    high_severity : list
+    medium_severity : list
+    low_severity : list
+    informational : list
 
+class IssueDetails : 
+    def __init__(self, desc : str, check : str) -> None :
+        self.desc = desc
+        self.check = check
+    def getIssue(self) : 
+        return {
+            'description' : getattr(self, 'desc'),
+            'check' : getattr(self, 'check')
+        }
+
+class ExtendedIssues :
+    def __init__(self) -> None:
+        self.high = []
+        self.medium = []
+        self.low = []
+        self.informational = []
+    
+    def add_issue(self, type : str, issue : IssueDetails) : 
+        current = getattr(self, type)
+        current.append(issue.getIssue())
+        setattr(self, type, current)
+
+    def get_self(self) :
+        return {
+            'high_severity' : getattr(self, 'high'),
+            'medium_severity' : getattr(self, 'medium'),
+            'low_severity' : getattr(self, 'low'),
+            'informational' : getattr(self, 'informational'),
+        }
+    
 class ContractIssues:
     def __init__(self) -> None:
         self.optimization = 0
@@ -81,9 +116,20 @@ def aggregate_issues(contract_analysis: object):
         
     return issues.get_self()
 
+def detailedIssues(contract_analysis: object) : 
+    issues = ExtendedIssues()
+    detectors = contract_analysis['results']['detectors']
+    # register issue if found
+    if isinstance(detectors, object):
+     for issue in detectors:
+        issue_type = issue['impact'].lower()
+        if hasattr(issues, issue_type):
+            newissue = IssueDetails(issue['description'], issue['check'])
+            issues.add_issue(issue_type, newissue)
+        
+    return issues.get_self()
 
-# saves solidity contract to folder
-def generate_issues(contract_string: str, pragma_version: str):
+def savefile (contract_string: str, pragma_version: str):
     global folder_exists
     global contracts_folder
     global contract_name
@@ -97,12 +143,23 @@ def generate_issues(contract_string: str, pragma_version: str):
     with open(f'./{contracts_folder}/{contract_name}.sol', 'w') as f:
         f.write(contract_string)
 
+
+# saves solidity contract to folder
+def generate_issues(contract_string: str, pragma_version: str):
+    savefile(contract_string, pragma_version)
     contract_filename = f"./{contracts_folder}/{contract_name}.sol"
     result_filename = f"./{contracts_folder}/{contract_name}.json"
     scan_contract(contract_filename, result_filename)
     analyzed_data = read_analyzer_results(result_filename)
     issues = aggregate_issues(analyzed_data)
     return issues
+
+def detectAll (contract_string : str, pragma_version : str) :
+    savefile(contract_string, pragma_version)
+    contract_filename = f"./{contracts_folder}/{contract_name}.sol"
+    result_filename = f"./{contracts_folder}/{contract_name}.json"
+    scan_contract(contract_filename, result_filename)
+    return detailedIssues(read_analyzer_results(result_filename))
 
 # server
 app = FastAPI()
@@ -135,15 +192,25 @@ async def trial(item : Contract):
 @app.post('/scanner')
 async def scan(contract: Contract, response_model=Issues):
     try:
-        print(contract)
         solidity_contract = contract.sol_contract
-        print("\n===================\n contract received\n", solidity_contract, "\n======================\n")
         pragma_version = pragma_utils.find_correct_version(contract.pragma) 
         solc.switch_solc_to_version(pragma_version)
         return generate_issues(solidity_contract, pragma_version)
     except BaseException as error: 
+        print(error)
         return 'Something went wrong while evaluating contract security'
 
+
+@app.post('/vulnerable')
+async def vulnerable(contract : Contract, response_model = Output):
+    try: 
+        solidity_contract = contract.sol_contract
+        pragma_version = pragma_utils.find_correct_version(contract.pragma) 
+        solc.switch_solc_to_version(pragma_version)
+        return detectAll(solidity_contract, pragma_version)
+    except BaseException as error:
+        print(error)
+        return 'Something went wrong while calling for high severity contracts'
 
 @app.get('/')
 async def default():
@@ -160,3 +227,7 @@ def getInformation(info : Info):
         "status" : "SUCCESS",
         "data" : info
 }
+
+@app.post('/output')
+async def display(info : Output):
+    return info.__str__()
