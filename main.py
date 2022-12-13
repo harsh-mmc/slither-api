@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from pragma_utils import Pragma
+import re
 
 
 contracts_folder = 'contracts'
