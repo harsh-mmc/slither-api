@@ -6,6 +6,10 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from pragma_utils import Pragma
 import re
+import boto3
+BUCKET_NAME = 'labs-smart-contract-security-audit'
+KEY = ''
+s3 = boto3.resource('s3')
 
 
 contracts_folder = 'contracts'
@@ -17,7 +21,7 @@ solc = compiler_helpers
 pragma_utils = Pragma(solc)
 
 class Contract(BaseModel): 
-    sol_contract: str
+    contract_key: str
     pragma: str
     
 class Issues(BaseModel):
@@ -130,7 +134,7 @@ def detailedIssues(contract_analysis: object) :
         
     return issues.get_self()
 
-def savefile (contract_string: str, pragma_version: str):
+def savefile (contract_key: str):
     global folder_exists
     global contracts_folder
     global contract_name
@@ -141,23 +145,23 @@ def savefile (contract_string: str, pragma_version: str):
     if not folder_exists:
         os.mkdir('contracts') 
 
-    with open(f'./{contracts_folder}/{contract_name}.sol', 'w') as f:
-        f.write(contract_string)
+    s3.Bucket(BUCKET_NAME).download_file(contract_key, f"./{contracts_folder}/{contract_name}.sol")
+    """with open(f'./{contracts_folder}/{contract_name}.sol', 'w') as f:
+        f.write(contract_string)"""
+    return f"./{contracts_folder}/{contract_name}.sol"
 
 
 # saves solidity contract to folder
-def generate_issues(contract_string: str, pragma_version: str):
-    savefile(contract_string, pragma_version)
-    contract_filename = f"./{contracts_folder}/{contract_name}.sol"
+def generate_issues(filepath: str, pragma_version: str):
+    contract_filename = filepath
     result_filename = f"./{contracts_folder}/{contract_name}.json"
     scan_contract(contract_filename, result_filename)
     analyzed_data = read_analyzer_results(result_filename)
     issues = aggregate_issues(analyzed_data)
     return issues
 
-def detectAll (contract_string : str, pragma_version : str) :
-    savefile(contract_string, pragma_version)
-    contract_filename = f"./{contracts_folder}/{contract_name}.sol"
+def detectAll (filepath : str, pragma_version : str) :
+    contract_filename = filepath
     result_filename = f"./{contracts_folder}/{contract_name}.json"
     scan_contract(contract_filename, result_filename)
     return detailedIssues(read_analyzer_results(result_filename))
@@ -192,11 +196,13 @@ async def trial(item : Contract):
 
 @app.post('/scanner')
 async def scan(contract: Contract, response_model=Issues):
+    solidity_contract_key = contract.contract_key
+    filepath = savefile(solidity_contract_key)
+    pragma_version = str(pragma_utils.find_correct_version(filepath))
+    print(filepath, pragma_version, "\n==============================\n")
     try:
-        solidity_contract = contract.sol_contract
-        pragma_version = pragma_utils.find_correct_version(contract.pragma) 
         solc.switch_solc_to_version(pragma_version)
-        return generate_issues(solidity_contract, pragma_version)
+        return generate_issues(filepath, pragma_version)
     except BaseException as error: 
         print(error)
         return 'Something went wrong while evaluating contract security'
@@ -204,11 +210,12 @@ async def scan(contract: Contract, response_model=Issues):
 
 @app.post('/vulnerable')
 async def vulnerable(contract : Contract, response_model = Output):
-    try: 
-        solidity_contract = contract.sol_contract
-        pragma_version = pragma_utils.find_correct_version(contract.pragma) 
+    solidity_contract_key = contract.contract_key
+    filepath = savefile(solidity_contract_key)
+    pragma_version = str(pragma_utils.find_correct_version(filepath))
+    try:
         solc.switch_solc_to_version(pragma_version)
-        return detectAll(solidity_contract, pragma_version)
+        return detectAll(filepath, pragma_version)
     except BaseException as error:
         print(error)
         return 'Something went wrong while calling for high severity contracts'
