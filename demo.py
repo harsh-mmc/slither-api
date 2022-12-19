@@ -12,7 +12,7 @@ print(colored('High Severity Vulnerabilities\n', 'red'))
 for issue in final.json()['high_severity']:
     print("Type:", colored(issue['check'], 'red'))
     print(colored(issue['description'], 'red'))
-
+``
 print(colored('Meduim Severity Vulnerabilities\n', 'yellow'))
 for issue in final.json()['medium_severity']:
     print("Type:", colored(issue['check'], 'yellow'))
