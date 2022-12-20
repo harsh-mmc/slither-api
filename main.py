@@ -7,6 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pragma_utils import Pragma
 import re
 import boto3
+import uvicorn
 BUCKET_NAME = 'labs-smart-contract-security-audit'
 KEY = ''
 s3 = boto3.resource('s3')
@@ -22,7 +23,6 @@ pragma_utils = Pragma(solc)
 
 class Contract(BaseModel): 
     contract_key: str
-    pragma: str
     
 class Issues(BaseModel):
     optimization: int
@@ -239,3 +239,6 @@ def getInformation(info : Info):
 @app.post('/output')
 async def display(info : Output):
     return info.__str__()
+
+if __name__ == '__main__':
+    uvicorn.run('main:app', port = 8001, reload=True)

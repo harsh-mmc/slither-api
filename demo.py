@@ -2,18 +2,18 @@ import requests
 import sys
 from main import *
 from termcolor import colored
-test = requests.post(url = 'http://127.0.0.1:8000/scanner', json = {'contract_key' : 'smart-contracts/denial-of-service.sol', 'pragma' : '0.8.12'})
+test = requests.post(url = 'http://127.0.0.1:8000/scanner', json = {'contract_key' : 'smart-contracts/denial-of-service.sol'})
 print(test, test.json())
 
-final = requests.post(url = 'http://127.0.0.1:8000/vulnerable',  json={'contract_key' : 'smart-contracts/denial-of-service.sol', 'pragma' : '0.8.11'})
+final = requests.post(url = 'http://127.0.0.1:8000/vulnerable',  json={'contract_key' : 'smart-contracts/denial-of-service.sol'})
 print(final, final.json())
 
 print(colored('High Severity Vulnerabilities\n', 'red'))
 for issue in final.json()['high_severity']:
     print("Type:", colored(issue['check'], 'red'))
     print(colored(issue['description'], 'red'))
-``
-print(colored('Meduim Severity Vulnerabilities\n', 'yellow'))
+
+print(colored('Medium Severity Vulnerabilities\n', 'yellow'))
 for issue in final.json()['medium_severity']:
     print("Type:", colored(issue['check'], 'yellow'))
     print(colored(issue['description'], 'yellow'))
