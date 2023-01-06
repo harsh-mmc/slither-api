@@ -12,12 +12,12 @@ pip3 install -r requirements.txt
 
 ## Slither scanner endpoint
 
-### POST /scanner
+### POST /vulnerable
 
 Request body
 
-1. contract_url - string
-2. pragma - string
+1. contract_key - string
+2. pragma - string (not required, can be parsed from the contract itself)
 
 ## Run server
 
@@ -31,4 +31,4 @@ uvicorn main:app --reload
 docker-compose up --build -d
 ```
 
-Now your app is running on `http://localhost:8000`
+Now your app is running on `http://localhost:8001`
