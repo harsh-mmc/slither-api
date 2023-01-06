@@ -3,3 +3,4 @@ __pycache__/
 external/
 demo.ipynb
 ext_api/
+.solc-select

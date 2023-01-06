@@ -16,7 +16,7 @@ pip3 install -r requirements.txt
 
 Request body
 
-1. sol_contract - string
+1. contract_url - string
 2. pragma - string
 
 ## Run server
