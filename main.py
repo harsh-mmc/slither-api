@@ -188,18 +188,13 @@ async def install_solc_versions_on_bootstrap():
     solc.install_solc_versions(solc_versions)
     # sets default solc compiler version
     os.system('solc-select use 0.8.16')
-    
-
-@app.post('/items')
-async def trial(item : Contract):
-    return "Hello"
-
+ 
 @app.post('/scanner')
 async def scan(contract: Contract, response_model=Issues):
+    """Returns a short security analysis output, with only counts of vulnerabilities accroding to severity."""
     solidity_contract_key = contract.contract_key
     filepath = savefile(solidity_contract_key)
     pragma_version = str(pragma_utils.find_correct_version(filepath))
-    print(filepath, pragma_version, "\n==============================\n")
     try:
         solc.switch_solc_to_version(pragma_version)
         return generate_issues(filepath, pragma_version)
