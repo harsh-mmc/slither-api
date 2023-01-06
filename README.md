@@ -10,6 +10,8 @@
 pip3 install -r requirements.txt
 ```
 
+FastAPI code written with respect to Python 3.10 syntax.
+
 ## Slither scanner endpoint
 
 ### POST /vulnerable
@@ -23,6 +25,11 @@ Request body
 
 ```bash
 uvicorn main:app --reload
+```
+or by directly running the script
+
+```py
+python3 main.py
 ```
 
 ## Run in container (Docker)
