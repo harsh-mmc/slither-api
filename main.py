@@ -219,21 +219,5 @@ async def vulnerable(contract : Contract, response_model = Output):
 async def default():
     return 'Server is running'
 
-
-class Info(BaseModel):
-    id : int
-    name : str
-
-@app.post("/getInformation")
-def getInformation(info : Info):
-    return {
-        "status" : "SUCCESS",
-        "data" : info
-}
-
-@app.post('/output')
-async def display(info : Output):
-    return info.__str__()
-
 if __name__ == '__main__':
     uvicorn.run('main:app', port = 8001, reload=True)
